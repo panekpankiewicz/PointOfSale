@@ -12,22 +12,22 @@ import impaq.Product;
 * @author Patryk Pankiewicz
 */
 public class ListOfProductsTest {
-	
-	@Test
-	public void testSumPrices() {
-		
-		BigDecimal price1 = BigDecimal.valueOf(1.24);	
-		Product product1 = new Product(1, "asparagus", price1);
-		BigDecimal price2 = BigDecimal.valueOf(2.54);	
-		Product product2 = new Product(2, "apple", price2);
-		ListOfProducts testList = new ListOfProducts();
 
-		for (int i=0;i<123456;i++){
-			testList.products.add(product1);
-			testList.products.add(product2);
-		}
+    @Test
+    public void testSumPrices() {
+//TODO
+        BigDecimal price1 = BigDecimal.valueOf(1.24);
+        Product product1 = new Product(1, "asparagus", price1);
+        BigDecimal price2 = BigDecimal.valueOf(2.54);
+        Product product2 = new Product(2, "apple", price2);
+        ListOfProducts testList = new ListOfProducts();
 
-		assertEquals(testList.sumPrices(), BigDecimal.valueOf(466663.68));
-	}
+        for (int i=0;i<123456;i++){
+            testList.products.add(product1);
+            testList.products.add(product2);
+        }
+
+        assertEquals(testList.sumPrices(), BigDecimal.valueOf(466663.68));
+    }
 
 }
